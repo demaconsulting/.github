@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="360" viewBox="0 0 320 360">
+  <!-- The LintMark project card (a tool): messy Markdown turning into neatly formatted Markdown.
+       Built from docs/images/projects/_card-template.svg; see the slot notes there. -->
+  <defs>
+    <style>
+      .name { font: bold 48px sans-serif; fill: #ffffff; text-anchor: middle; }
+      .name2 { font: bold 36px sans-serif; fill: #ffffff; text-anchor: middle; }
+      .mini { font: bold 22px sans-serif; }
+      .bar { fill: #cbd5e1; }
+      .ink { fill: #1e293b; }
+      .page { fill: #ffffff; filter: url(#paper); }
+    </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b1f"/>
+      <stop offset="0.55" stop-color="#130f3b"/>
+      <stop offset="1" stop-color="#071a2e"/>
+    </linearGradient>
+    <radialGradient id="cardGlowViolet" cx="0.3" cy="0.12" r="0.75">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cardGlowPink" cx="0.85" cy="1" r="0.7">
+      <stop offset="0" stop-color="#db2777" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#db2777" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#a5b4fc" fill-opacity="0.16"/>
+    </pattern>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="accentGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="paper" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- The card: deep gradient, soft glows, a dot grid, and a thin rim -->
+  <rect x="1" y="1" width="318" height="358" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="318" height="358" rx="24" fill="url(#cardGlowViolet)"/>
+  <rect x="1" y="1" width="318" height="358" rx="24" fill="url(#cardGlowPink)"/>
+  <rect x="1" y="1" width="318" height="358" rx="24" fill="url(#dots)"/>
+  <rect x="1" y="1" width="318" height="358" rx="24" fill="none" stroke="url(#rim)" stroke-width="1.5"/>
+
+  <!-- Accent bar -->
+  <rect x="112" y="1" width="96" height="4" rx="2" fill="#f472b6"/>
+
+  <!-- The inner panel and the glow behind the pictograph -->
+  <rect x="20" y="24" width="280" height="220" rx="16" fill="#0a1022" stroke="#ffffff" stroke-opacity="0.06"/>
+  <ellipse cx="160" cy="134" rx="130" ry="100" fill="url(#accentGlow)"/>
+
+  <!-- Pictograph: a messy Markdown page becoming a neat one -->
+  <g transform="translate(20 24)">
+    <path class="page" d="M14 36 L84 36 L102 54 L102 184 L14 184 Z"/>
+    <path d="M84 36 L84 54 L102 54 Z" fill="#cbd5e1"/>
+    <text class="mini" x="24" y="82" fill="#f87171" transform="rotate(-8 24 82)">#</text>
+    <rect x="42" y="68" width="40" height="8" rx="4" fill="#94a3b8" transform="rotate(-6 62 72)"/>
+    <rect class="bar" x="24" y="94" width="60" height="8" rx="4" transform="rotate(4 54 98)"/>
+    <rect class="bar" x="32" y="112" width="46" height="8" rx="4" transform="rotate(-5 55 116)"/>
+    <text class="mini" x="22" y="152" fill="#f87171" transform="rotate(10 22 152)">*</text>
+    <rect class="bar" x="44" y="136" width="44" height="8" rx="4" transform="rotate(7 66 140)"/>
+    <rect class="bar" x="26" y="158" width="56" height="8" rx="4" transform="rotate(-4 54 162)"/>
+
+    <path d="M114 110 H146 M136 100 L148 110 L136 120" fill="none" stroke="#f472b6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path class="page" d="M160 36 L230 36 L248 54 L248 184 L160 184 Z"/>
+    <path d="M230 36 L230 54 L248 54 Z" fill="#cbd5e1"/>
+    <rect x="172" y="64" width="64" height="28" rx="8" fill="#f472b6"/>
+    <text class="mini ink" x="186" y="86" text-anchor="middle">#</text>
+    <rect x="198" y="74" width="26" height="8" rx="4" fill="#ffffff"/>
+    <circle cx="178" cy="116" r="4" fill="#f472b6"/>
+    <rect class="bar" x="190" y="112" width="46" height="8" rx="4"/>
+    <circle cx="178" cy="136" r="4" fill="#f472b6"/>
+    <rect class="bar" x="190" y="132" width="46" height="8" rx="4"/>
+    <circle cx="178" cy="156" r="4" fill="#f472b6"/>
+    <rect class="bar" x="190" y="152" width="46" height="8" rx="4"/>
+    <circle cx="246" cy="180" r="22" fill="#4ade80" stroke="#0a1022" stroke-width="3"/>
+    <path d="M236 180 L243 188 L257 172" fill="none" stroke="#0a1022" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Project name -->
+  <text class="name" x="160" y="296">LintMark</text>
+
+  <!-- Kind dot: tool -->
+  <circle cx="160" cy="342" r="14" fill="#60a5fa" fill-opacity="0.22"/>
+  <circle cx="160" cy="342" r="8" fill="#60a5fa"/>
+</svg>

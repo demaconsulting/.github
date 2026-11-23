@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "demaconsulting.canvasnet.tool": {
+      "version": "0.2.0-beta.13",
+      "commands": [
+        "canvasnet"
+      ],
+      "rollForward": false
+    }
+  }
+}
