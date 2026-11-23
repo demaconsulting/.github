@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560">
+  <!-- The Utilities group card: the family name and purpose, its two project cards in one centered row
+       (embedded from docs/images/projects/, not copied), and a legend for the kind dots. The definitions and the
+       background follow the shared DEMA Consulting hero (docs/images/hero.svg). This file is
+       docs/images/group-utilities.svg, beside its rendered .png.
+       Layout: cards of 240x270 with a 16px gutter, one row at y = 206 centered. -->
+  <defs>
+    <style>
+      .word { font: bold 92px sans-serif; fill: #ffffff; }
+      .body { font: 28px sans-serif; fill: #cbd5e1; }
+      .brandText { fill: url(#brand); }
+      .mini { font: bold 22px sans-serif; }
+    </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b1f"/>
+      <stop offset="0.55" stop-color="#130f3b"/>
+      <stop offset="1" stop-color="#071a2e"/>
+    </linearGradient>
+    <radialGradient id="glowViolet" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPink" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#db2777" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#db2777" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#a5b4fc" fill-opacity="0.16"/>
+    </pattern>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: deep gradient, soft glows, and a dot grid -->
+  <rect width="1600" height="560" fill="url(#bg)"/>
+  <ellipse cx="250" cy="120" rx="420" ry="260" fill="url(#glowViolet)"/>
+  <ellipse cx="1000" cy="340" rx="560" ry="240" fill="url(#glowCyan)"/>
+  <ellipse cx="1480" cy="540" rx="380" ry="240" fill="url(#glowPink)"/>
+  <rect width="1600" height="560" fill="url(#dots)"/>
+
+  <!-- Family name and purpose -->
+  <text class="word brandText" x="48" y="108" style="font-size: 80px">Utilities</text>
+  <rect x="54" y="132" width="132" height="6" rx="3" fill="url(#brand)"/>
+  <text class="body" x="54" y="180">Small tools that keep NuGet packages cached and installed.</text>
+
+  <!-- The two project cards -->
+  <image href="projects/nugetcachetool.svg" x="552" y="206" width="240" height="270"/>
+  <image href="projects/nugetinstaller.svg" x="808" y="206" width="240" height="270"/>
+
+  <!-- Legend for the kind dots -->
+  <g>
+    <text class="mini" x="48" y="526" fill="#94a3b8">Kind:</text>
+    <circle cx="150" cy="518" r="8" fill="#5eead4"/>
+    <text class="mini" x="166" y="526" fill="#94a3b8">library</text>
+    <circle cx="278" cy="518" r="8" fill="#60a5fa"/>
+    <text class="mini" x="294" y="526" fill="#94a3b8">tool</text>
+    <circle cx="378" cy="518" r="8" fill="#f472b6"/>
+    <text class="mini" x="394" y="526" fill="#94a3b8">app</text>
+    <circle cx="470" cy="518" r="8" fill="#a78bfa"/>
+    <text class="mini" x="486" y="526" fill="#94a3b8">definitions</text>
+  </g>
+</svg>
